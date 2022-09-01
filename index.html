@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            border: 5px solid rgba(0, 0, 0, 0.678);
+        }
+        
+        #items {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+        }
+        
+        #adventuremsg {
+            width: 100%;
+            text-align: center;
+            margin-top: 5%;
+            padding: 5%;
+            font-size: 30px;
+        }
+        
+        .hidden {
+            display: none;
+            height: 50px;
+        }
+        
+        #buttons {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+        
+        .button {
+            width: 200px;
+            height: 75px;
+            background-color: rgba(128, 128, 128, 0.171);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .button:hover {
+            border: 1px solid yellow;
+        }
+        
+        #container {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="items">
+            <h1>ITEMS</h1>
+            <img id="bidet" class="hidden" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQYRNGYT1Wt8T5pWzyXim7t9P8IPRX-9kloxkcis1-uYGFk753n2Q_R0kcbBDoFCzpyzls3uoIhai9yIBxQrloSgqbWXr3-XQ&usqp=CAE"></imb>
+            <img id="gold" class="hidden" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQzGcZahRSTCxONh0zOmZozz_fIYpKGm-VeqZQTj3BxEjqUTqAAwek2qTwWvcKtgjSSn89WXLblNXoHhijuqqIk9Il6krLdqNszzf_GxRLXfVO852sqveh9&usqp=CAE"></imb>
+            <img id="shoes" class="hidden" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSwus0oyZwiT-NxOZuNFe8W_lFYV2UqX8xdjTk80WRKj-NTMP1ZKJyxh4QvbjKXMWO7VpRUojBBUFe09RAx_rM5bh2HgI-1b4wMQwEnTIMVFhJGm_BzqbNzRCA&usqp=CAE"></imb>
+        </div>
+        <div id="adventuremsg">
+            Loading...
+        </div>
+    </div>
+    <div id="buttons">
+
+    </div>
+    <script src="./socket.js"></script>
+</body>
+
+</html>
