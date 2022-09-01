@@ -54,6 +54,7 @@
           if (response.isDead) {
               user_file.user_data.hasGold = false;
               user_file.user_data.hasBidet = false;
+              user_file.user_data.hasSneakers = false;
               console.log(user_file)
           }
           let options = (JSON.parse(response.options));
