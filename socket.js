@@ -66,6 +66,7 @@
 
   function goRoute(route) {
       console.log(route);
+      document.getElementById("buttons").innerHTML = "";
       chooseOption(route);
   }
 
